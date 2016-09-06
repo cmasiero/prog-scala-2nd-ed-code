@@ -1,0 +1,48 @@
+        <div class="scala-logo">
+          <img src="/resources/img/scala-logo-white.png" alt="Scala Logo" />
+          <!-- <div class="spiral-logo"><img src="/resources/img/scala-spiral-white.png"/></div> -->
+          <!-- <div class="scala-text">Scala</div> -->
+    <a href="http://github.com/scala/scala"><img src="/resources/img/github-logo.png" alt="GitHub Logo" /></a>
+  <li id="scala-lang-twitter">
+    <a href="http://twitter.com/scala_lang"><img src="/resources/img/twitter-logo-white.png" alt="Twitter Logo" /></a>
+          <a class="learn-more-btn" href="/what-is-scala.html">Learn More</a>
+  <a class="central-btn api" href="http://www.scala-lang.org/api/">API Docs&nbsp;&nbsp;&nbsp;&nbsp;</a>
+  <div class="big-scala-spiral"><img src="/resources/img/smooth-spiral.png" alt="Spiral" /></div>
+  <div class="central-btn scala-version"><span class="superbold">Scala</span><br/>2.11.8</div>
+      <p class="getting-started"><a href="http://www.scala-lang.org/api/current/"><b>Current API Docs</b></a></p>
+          <a class="learn-more-btn" href="/what-is-scala.html">Learn More</a>
+  <figcaption>Author.scala</figcaption>
+  <pre><code>import static scala.collection.JavaConversions.asJavaCollection;
+  <pre><code>scala> class Person(val name: String, val age: Int) {
+scala> def underagePeopleNames(persons: List[Person]) = {
+scala> def createRandomPeople() = {
+scala> val people = createRandomPeople()
+scala> underagePeopleNames(people)
+    <div id="scaladays">
+      <a id="scaladays-register-btn" href="http://scaladays.org/">More Info</a>
+    <div id="scalawksp">
+      <a id="scalawksp-register-btn" href="http://lampwww.epfl.ch/~hmiller/scala2014">More Info</a>
+        <!-- <div class="add-event">or <a href="https://github.com/scala/scala-lang/tree/master/events">add an event</a></div> -->
+   <div class="add-event"><a href="/events">See more events</a> or <a href="https://github.com/scala/scala-lang/tree/master/events">add one to our feed</a></div>
+        <!-- <div class="add-training">or <a href="https://github.com/scala/scala-lang/tree/master/training">add a training</a></div> -->
+        <div class="add-training"><a href="/training">See more trainings</a> or <a href="https://github.com/scala/scala-lang/tree/master/training">add one to our feed</a></div>
+  <li><a href="http://docs.scala-lang.org/sips/pending/uncluttering-control.html">SIP-12: Uncluttering Scala’s syntax for control structures</a>.
+the Committee’s reaction <a href="https://github.com/scala/scala.github.com/issues/555">here</a>.</li>
+  <li><a href="http://docs.scala-lang.org/sips/pending/self-cleaning-macros.html">SIP-16: Self-cleaning macros</a>.
+design were addressed. With the intention of letting scala.meta
+you’re interested in Eugene’s explanation, follow <a href="https://github.com/scala/scala.github.com/pull/57">this</a>.</li>
+<a href="http://docs.scala-lang.org/sips/pending/42.type.html">SIP-23: Literal-based singleton types</a> (reviewer:
+Adriaan Moors) and <a href="https://github.com/scala/scala.github.com/pull/533%23issuecomment-239422098">SIP-27: Trailing
+<a href="http://docs.scala-lang.org/sips/pending/spores.html">SIP-21: Spores</a> and
+<a href="http://docs.scala-lang.org/sips/pending/repeated-byname.html">SIP-24: Repeated by-name
+meeting <a href="http://docs.scala-lang.org/sips/minutes/sip-10th-august-minutes.html">in the SIP website</a>.</p>
+              <div class="recent-news-title"><a href="/blog/2016/08/09/the-scala-library-index-reaches-beta.html">Scala Library Index Reaches Beta!</a></div>
+              <div class="recent-news-title"><a href="/blog/2016/07/12/a-reformed-scala-improvement-process.html">A Reformed Scala Improvement Process</a></div>
+        <a id="twitter-btn" href="https://twitter.com/scala_lang">Follow Scala on Twitter</a>
+        <br/><a style="border-bottom: 0px;" href="https://twitter.com/scala_lang"><img style="padding-top: 8px;" src="/resources/img/twitter-logo-white-lg.png" alt="white Twitter logo"/></a>
+      <li><a href="http://www.scala-lang.org/api/current/index.html#package">API</a></li>
+      <li><a href="http://docs.scala-lang.org/overviews/">Overviews/Guides</a></li>
+      <li><a href="http://docs.scala-lang.org/tutorials/">Tutorials</a></li>
+      <div class="scala-logo-footer">
+        <img src="/resources/img/scala-logo-red-footer.png" alt="Scala footer logo" />
+    <script src="/resources/js/vendor/prettify/lang-scala.js" type="text/javascript" ></script>
