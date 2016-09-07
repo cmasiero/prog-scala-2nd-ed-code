@@ -2,7 +2,7 @@
 package progscala2.dsls.payroll
 
 object common {
-  sealed trait Amount { def amount: Double }                         // <1>
+  sealed trait Amount { def amount: Double }                         // <1> Trait encapsulates a deduction amount
 
   case class Percentage(amount: Double) extends Amount {
     override def toString = s"$amount%"
@@ -12,18 +12,18 @@ object common {
     override def toString = s"$$$amount"
   }
 
-  implicit class Units(amount: Double) {                             // <2>
-    def percent = Percentage(amount)
+  implicit class Units(amount: Double) {                             // <2> implicit class : it handles conversion from
+    def percent = Percentage(amount)                                 //     Double to $ or % subtype (Used only in internal DSL)
     def dollars = Dollars(amount)
   }
 
-  case class Deduction(name: String, amount: Amount) {               // <3>
+  case class Deduction(name: String, amount: Amount) {               // <3> A type for a single deduction.
     override def toString = s"$name: $amount"
   }
 
-  case class Deductions(                                             // <4>
-    name: String,
-    divisorFromAnnualPay: Double = 1.0,
+  case class Deductions(                                             // <4> A type for all deductions.
+    name: String,                                                    //     It also contains a name (biweekly) and a divisor
+    divisorFromAnnualPay: Double = 1.0,                              //     to calculate a period's gross pay
     var deductions: Vector[Deduction] = Vector.empty) {
 
     def gross(annualSalary: Double): Double =                        // <5>
