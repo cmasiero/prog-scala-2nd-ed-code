@@ -1,14 +1,14 @@
 // src/main/scala/progscala2/dsls/payroll/internal/dsl.scala
 package progscala2.dsls.payroll.internal
-import scala.language.postfixOps                                     // <1>
+import scala.language.postfixOps                                     // <1> We need it to use postfix expression : 20.0 dollar
 import progscala2.dsls.payroll.common._
 
 object Payroll {                                                     // <2>
   
-  import dsl._                                                       // <3>
+  import dsl._                                                       // <3> Import dsl
 
   def main(args: Array[String]) = {
-    val biweeklyDeductions = biweekly { deduct =>                    // <4>
+    val biweeklyDeductions = biweekly { deduct =>                    // <4> The Domain Specific Language (DSL) in action
       deduct federal_tax          (25.0  percent)
       deduct state_tax            (5.0   percent)
       deduct insurance_premiums   (500.0 dollars)
@@ -24,9 +24,9 @@ object Payroll {                                                     // <2>
   }
 }
 
-object dsl {                                                         // <1>
+object dsl {                                                         // <1> Wrap the public dsl in a object
 
-  def biweekly(f: DeductionsBuilder => Deductions) =                 // <2>
+  def biweekly(f: DeductionsBuilder => DeductionsBuilder) =                 // <2>
     f(new DeductionsBuilder("Biweekly", 26.0))
 
   class DeductionsBuilder(                                           // <3>

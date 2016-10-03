@@ -26,11 +26,12 @@ object common {
     divisorFromAnnualPay: Double = 1.0,                              //     to calculate a period's gross pay
     var deductions: Vector[Deduction] = Vector.empty) {
 
-    def gross(annualSalary: Double): Double =                        // <5>
-      annualSalary / divisorFromAnnualPay
+    def gross(annualSalary: Double): Double =                        // <5> Once the deductions are constructed, return the gross
+      annualSalary / divisorFromAnnualPay                            //     and the net for the pay period.
     
     def net(annualSalary: Double): Double = {
       val g = gross(annualSalary)
+
       (deductions foldLeft g) { 
         case (total, Deduction(deduction, amount)) => amount match {
           case Percentage(value) => total - (g * value / 100.0)
@@ -39,7 +40,7 @@ object common {
       }
     }
 
-    override def toString =                                          // <6>
+    override def toString =                                          // <6> Overridden to return the format we want
       s"$name Deductions:" + deductions.mkString("\n  ", "\n  ", "")
   }
 }
