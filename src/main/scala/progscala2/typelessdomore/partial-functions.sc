@@ -1,5 +1,25 @@
 // src/main/scala/progscala2/typelessdomore/partial-functions.sc
 
+/*
+ * Cristiano:Partial Function
+ * Partial functions are partial in the sense that they aren’t defined for all possible inputs,
+ * only those inputs that match at least one of the specified case clauses.
+ *
+ * Only case clauses can be specified in a partial function and the entire
+ * function must be enclosed in curly braces.
+ * In contrast, “regular” function literals can be wrapped in parentheses or curly braces.
+ *
+ * If the function is called with an input that doesn’t match one of the case clauses,
+ * a MatchError is thrown at runtime.
+ *
+ * You can test if a PartialFunction will match an input using the isDefinedAt method.
+ * This function avoids the risk of throwing a MatchError exception.
+ *
+ * You can “chain” PartialFunctions together: pf1 orElse pf2 orElse pf3 ….
+ * If pf1 doesn’t match, then pf2 is tried, then pf3, etc.
+ * A MatchError is only thrown if none of them matches.
+ */
+
 val pf1: PartialFunction[Any,String] = { case s:String => "YES" }    // <1>
 val pf2: PartialFunction[Any,String] = { case d:Double => "YES" }    // <2>
 
