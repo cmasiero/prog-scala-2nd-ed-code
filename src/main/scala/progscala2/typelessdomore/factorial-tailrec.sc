@@ -1,6 +1,13 @@
 // src/main/scala/progscala2/typelessdomore/factorial-tailrec.sc
 import scala.annotation.tailrec
 
+/**
+  * Cristiano:Recursion
+  * the compiler can tell you if you got it wrong,
+  * if you add an annotation, tailrec, as shown in this
+  * refined version of factorial:
+  */
+
 def factorial(i: Int): Long = {
   @tailrec
   def fact(i: Int, accumulator: Int): Long = {

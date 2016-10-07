@@ -1,6 +1,6 @@
 // src/main/scala/progscala2/typelessdomore/map-get.sc
 // Very limited version of a map; it can hold only one key-value
-// pair! The "get" method is used in the text, by itself...
+// pair! The "get" method is used in the text, by itself....
 
 class MyMap[A,B](var _key: A, var _value: B) {
   def get(key: A): Option[B] = {
@@ -9,6 +9,7 @@ class MyMap[A,B](var _key: A, var _value: B) {
     else
       None
   }
+
   def contains(key: A) = key == _key
   def getValue(key: A) = _value
   def put(key: A, value: B) = _value = value

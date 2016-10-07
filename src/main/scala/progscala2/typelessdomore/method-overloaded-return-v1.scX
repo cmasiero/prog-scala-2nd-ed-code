@@ -9,3 +9,20 @@ object StringUtilV1 {
 }
 
 println( StringUtilV1.joiner(List("Programming", "Scala")) )
+
+
+/**
+ * Cristiano:Overloaded methods
+ * Overloaded methods require an explicit
+ * return type when one such method calls another.
+ * Because the second joiner method calls the first,
+ * it requires an explicit String return type.
+ * It should look like this:
+ * def joiner(strings: List[String]): String = joiner(strings :_*)
+ *
+ */
+
+ /* Cristiano:argument list
+  * def joiner(strings: List[String]): String = joiner(strings :_*)
+  * The “*” after the String in the argument list says “zero or more Strings.”
+  */

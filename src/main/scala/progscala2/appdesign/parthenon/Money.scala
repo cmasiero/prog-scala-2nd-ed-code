@@ -13,6 +13,7 @@ case class Money(amount: Double) {
   def >= (m: Money): Boolean = amount >= m.amount
 
   override def toString = "$"+amount
+
 }
 
 case object Money {
