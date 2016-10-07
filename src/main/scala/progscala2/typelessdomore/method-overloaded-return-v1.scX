@@ -24,5 +24,14 @@ println( StringUtilV1.joiner(List("Programming", "Scala")) )
 
  /* Cristiano:argument list
   * def joiner(strings: List[String]): String = joiner(strings :_*)
-  * The “*” after the String in the argument list says “zero or more Strings.”
+  * The "*" after the String in the argument list says “zero or more Strings.”
   */
+
+  /**
+   * Cristiano:variable argument list
+   * It uses a special syntax (_*) to tell the compiler to convert
+   * the input List into the variable argument list expected by
+   * the first joiner method:
+   * def joiner( strings: List[ String]): String = joiner( strings :_*)
+   */
+
