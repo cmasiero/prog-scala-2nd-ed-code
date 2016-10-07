@@ -18,8 +18,10 @@ case class Money(amount: Double) {
 
 case object Money {
   /**
-   * Convenience method to convert a string to Money. Doesn't handle an invalid
-   * string!
-   */
+    *
+    * Convenience method to convert a string to Money. Doesn't handle an invalid
+    * string!
+    *
+    */
   def apply(amount: String): Money = Money(amount.toDouble)
 }
