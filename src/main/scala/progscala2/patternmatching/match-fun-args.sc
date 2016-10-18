@@ -19,6 +19,12 @@ pas map { tup =>
   s"$name (age: $age) lives at $street, $city, in $country"
 }
 
+/**
+  * Cristiano:Other Uses of Pattern Matching
+  * A particularly convenient use of pattern matching and case clauses
+  * is to make function literals of complex arguments easier to use:
+  */
+
 // Nicer way:
 pas map {
   case (Person(name, age), Address(street, city, country)) =>
