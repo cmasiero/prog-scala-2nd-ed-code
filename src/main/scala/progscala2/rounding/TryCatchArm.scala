@@ -2,7 +2,6 @@
 package progscala2.rounding
 import scala.language.reflectiveCalls
 import scala.util.control.NonFatal
-
 // DeanW (Dec. 21, 2015): Refined the implementation and the usage
 // example below to more clearly indicate the handling of the returned
 // object of type T.
@@ -24,6 +23,15 @@ object manage {
     }
   }
 }
+
+/**
+  * Cristiano:Call by Name, Call by Value
+  * Scala, like most languages, normally uses call-by-value semantics.
+  * If we write manage(Source.fromFile( fileName)) in a call-by-value context,
+  * the Source.fromFile method is called and the value it returns
+  * is passed to manage.
+  *
+  */
 
 object TryCatchARM {
   /** Usage: scala rounding.TryCatch filename1 filename2 ... */

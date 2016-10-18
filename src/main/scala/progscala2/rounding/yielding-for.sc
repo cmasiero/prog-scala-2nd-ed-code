@@ -5,7 +5,9 @@ val dogBreeds = List("Doberman", "Yorkshire Terrier", "Dachshund",
 
 /**
   * Cristiano:for Comprehensions - Yielding
-  *
+  * Every time through the for expression,
+  * the filtered result is yielded as a value named breed.
+  * These results accumulate with every run.
   */
 val filteredBreeds = for {
   breed <- dogBreeds
@@ -14,3 +16,12 @@ val filteredBreeds = for {
 
 for ( x <- filteredBreeds)
   println("--->" + x)
+
+
+/**
+  * Cristiano:for loop
+  * When a for comprehension doesn’t use yield,
+  * but performs side effects like printing instead,
+  * the comprehension is called a for loop,
+  **/
+

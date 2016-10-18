@@ -1,5 +1,11 @@
 // src/main/scala/progscala2/patternmatching/match-boolean.sc
 
+/**
+  * Cristiano:Pattern Matching, Simple Match
+  *
+  *
+  *
+  */
 val bools = Seq(true, false)
 
 for (bool <- bools) {

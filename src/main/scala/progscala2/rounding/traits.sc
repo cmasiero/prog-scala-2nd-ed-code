@@ -1,6 +1,19 @@
 // BEGIN SERVICE
 // src/main/scala/progscala2/rounding/traits.sc
 
+/**
+  * Cristiano:traits
+  * Scala replaces interfaces with traits.
+  * We’ll explore them in glorious detail in Chapter   9, but for now,
+  * think of them of interfaces that also give you the option of defining
+  * the methods you declare.
+  * Traits can also declare and optionally define instance fields
+  * (not just static fields, as in Java interfaces),
+  * and you can declare and optionally define type values,
+  *
+  */
+
+
 class ServiceImportante(name: String) {
   def work(i: Int): Int = {
     println(s"ServiceImportante: Doing important work! $i")

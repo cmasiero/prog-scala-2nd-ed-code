@@ -1,5 +1,22 @@
 // src/main/scala/progscala2/rounding/enumeration.sc
 
+/**
+  * Cristiano:Enumeration
+  *
+  * While enumerations are a built-in part of many programming languages,
+  * Scala takes a different route and implements them as an
+  * Enumeration class in its standard library.
+  * This means there is no special syntax for enumerations baked
+  * into Scala’s grammar, as there is for Java.
+  * Instead, you just define an object that extends the Enumeration class
+  * and follow its idioms.
+  *
+  *
+  * The type Breed is an alias that lets us reference Breed instead of Value.
+  * The only place we actually use this is the argument to the isTerrier method.
+  *
+  */
+
 object Breed extends Enumeration {
   type Breed = Value
   val doberman = Value("Doberman Pinscher")

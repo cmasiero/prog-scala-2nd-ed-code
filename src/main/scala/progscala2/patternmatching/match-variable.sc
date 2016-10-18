@@ -1,5 +1,18 @@
 // src/main/scala/progscala2/patternmatching/match-variable.sc
 
+/**
+  * Cristiano:Pattern Matching. Values, Variables, and Types in Matches
+  * Matches, like all expressions, return a value.
+  * In this case, all clauses return strings, so the return type
+  * of the whole clause is String.
+  * The compiler infers the closest supertype
+  * (also called the least upper bound) for types of values returned
+  * by all the case clauses.
+  *
+  * Matches are eager, so more specific clauses must appear
+  * before less specific clauses.
+  *
+  */
 for {
   x <- Seq(1, 2, 2.7, "one", "two", 'four)                           // <1>
 } {
