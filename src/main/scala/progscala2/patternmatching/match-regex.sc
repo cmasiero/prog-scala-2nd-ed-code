@@ -1,5 +1,8 @@
 // src/main/scala/progscala2/patternmatching/match-regex.sc
 
+/**
+  * Cristiano:Matching on Regular Expressions
+  */
 val BookExtractorRE = """Book: title=([^,]+),\s+author=(.+)""".r     // <1>
 val MagazineExtractorRE = """Magazine: title=([^,]+),\s+issue=(.+)""".r
 

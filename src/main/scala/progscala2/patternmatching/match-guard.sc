@@ -1,5 +1,7 @@
 // src/main/scala/progscala2/patternmatching/match-guard.sc
-
+/**
+  * Cristiano:Pattern Matching, Guards in case Clauses
+  */
 for (i <- Seq(1,2,3,4)) {
   i match {
     case _ if i%2 == 0 => println(s"even: $i")                       // <1>

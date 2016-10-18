@@ -1,5 +1,11 @@
 // src/main/scala/progscala2/patternmatching/match-seq-without-unapplySeq.sc
 
+/**
+  * Cristiano:Matching, without unapplySeq Method
+  * We could still use the +: matching we saw before, which is more elegant:
+  * For unapplySeq implementation see:match-seq-unapplySeq.sc
+  */
+
 val nonEmptyList   = List(1, 2, 3, 4, 5)
 val emptyList      = Nil
 val nonEmptyMap    = Map("one" -> 1, "two" -> 2, "three" -> 3)

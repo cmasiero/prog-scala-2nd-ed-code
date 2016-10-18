@@ -1,5 +1,11 @@
 // src/main/scala/progscala2/patternmatching/match-deep.sc
 
+
+/**
+  * Cristiano: Pattern Matching, Matching on case Classes
+  *
+  */
+
 // Simplistic address type. Using all strings is questionable, too.
 case class Address(street: String, city: String, country: String)
 case class Person(name: String, age: Int, address: Address)

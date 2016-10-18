@@ -1,5 +1,12 @@
 // src/main/scala/progscala2/patternmatching/match-deep2.sc
 
+
+/**
+  * Cristiano:More on Binding Variables in case Clauses
+  *
+  * The p @ … syntax assigns to p the whole Person instance
+  *
+  */
 case class Address(street: String, city: String, country: String)
 case class Person(name: String, age: Int, address: Address)
 

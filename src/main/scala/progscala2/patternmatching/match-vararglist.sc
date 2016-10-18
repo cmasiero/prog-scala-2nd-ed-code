@@ -1,5 +1,15 @@
 // src/main/scala/progscala2/patternmatching/match-vararglist.sc
 
+
+/**
+  * Cristiano:Matching on Variable Argument Lists
+  *
+  * <5> Note the syntax for matching on a variable argument: name @ _*.
+  *
+  * The syntax for pattern matching on a variable argument list,
+  * name @ _*, is not that intuitive. Occasionally, you’ll need it.
+  */
+
 // Operators for WHERE clauses
 object Op extends Enumeration {                                      // <1>
   type Op = Value

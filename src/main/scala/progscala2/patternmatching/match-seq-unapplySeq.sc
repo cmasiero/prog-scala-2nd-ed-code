@@ -1,5 +1,14 @@
 // src/main/scala/progscala2/patternmatching/match-seq-unapplySeq.sc
 
+/**
+  * Cristiano:Matching, unapplySeq Method
+  * the Seq companion object implements apply and unapplySeq,
+  * but not unapply:
+  * def apply[ A]( elems: A*): Seq[ A]
+  * def unapplySeq[ A]( x: Seq[ A]): Some[Seq[A]]
+  *
+  */
+
 val nonEmptyList   = List(1, 2, 3, 4, 5)                             // <1>
 val emptyList      = Nil
 val nonEmptyMap    = Map("one" -> 1, "two" -> 2, "three" -> 3)
