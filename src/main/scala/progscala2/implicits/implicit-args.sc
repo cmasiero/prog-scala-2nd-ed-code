@@ -18,9 +18,12 @@ object ComplicatedSalesTax {
     0.0F
   }
 
-  implicit def rate(implicit cstd: ComplicatedSalesTaxData): Float = 
+  implicit def rate(implicit cstd: ComplicatedSalesTaxData): Float = {
+    println("[ComplicatedSalesTax::rate] BEGIN")
+    println(s"[ComplicatedSalesTax::rate] cstd.baseRate : ${cstd.baseRate}")
     if (cstd.isTaxHoliday) 0.0F
     else cstd.baseRate + extraTaxRateForStore(cstd.storeId)
+  }
 }
 
 {
@@ -38,3 +41,10 @@ object ComplicatedSalesTax {
   println(s"Tax on $amount = ${calcTax(amount)}")
 }
 
+/**
+  * Cristiano:implicit
+  * It doesn’t matter that we call calcTax inside an interpolated string.
+  * The implicit values are still used for the rate argument.
+  * For the “complicated” case, we use an implicit method, which itself
+  * takes an implicit argument with the data it needs.
+  */
