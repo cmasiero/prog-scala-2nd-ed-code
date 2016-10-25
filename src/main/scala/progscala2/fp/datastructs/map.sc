@@ -4,6 +4,12 @@
   *
   * We learned previously that the key -> value idiom is actually
   * implemented with an implicit conversion in the library.
+  *
+  * Unlike List, there are immutable and mutable implementations of
+  * Map: scala.collection.immutable.Map[ A, B] and
+  * scala.collection.mutable.Map[ A, B], respectively.
+  * You have to import the mutable version explicitly,
+  * while the immutable version is already exposed by Predef.
   */
 
 val stateCapitals = Map(
