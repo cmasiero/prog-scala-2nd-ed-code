@@ -1,5 +1,5 @@
 /**
-  * Cristiano: Implicit Conversions
+  * Cristiano: Implicit Conversions - (->)
   *
   * There are several ways to create a pair:
   * (1, "one")

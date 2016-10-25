@@ -1,4 +1,10 @@
 // src/main/scala/progscala2/fp/datastructs/map.sc
+/**
+  * Cristiano: Functional Data Structures - map
+  *
+  * We learned previously that the key -> value idiom is actually
+  * implemented with an implicit conversion in the library.
+  */
 
 val stateCapitals = Map(
   "Alabama" -> "Montgomery",

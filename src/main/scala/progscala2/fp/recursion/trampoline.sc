@@ -1,5 +1,13 @@
 // src/main/scala/progscala2/fp/recursion/trampoline.sc
 // From: scala-lang.org/api/current/index.html#scala.util.control.TailCalls$
+
+/**
+  * Cristiano:recursion - Trampoline for Tail Calls
+  * A trampoline is a loop that works through a list of functions,
+  * calling each one in turn.
+  *
+  */
+
 import scala.util.control.TailCalls._
 
 def isEven(xs: List[Int]): TailRec[Boolean] =

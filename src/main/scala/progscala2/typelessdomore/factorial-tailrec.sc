@@ -2,7 +2,7 @@
 import scala.annotation.tailrec
 
 /**
-  * Cristiano:Recursion
+  * Cristiano:recursion
   * the compiler can tell you if you got it wrong,
   * if you add an annotation, tailrec, as shown in this
   * refined version of factorial:
